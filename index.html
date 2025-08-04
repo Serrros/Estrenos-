@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximos Estrenos de Series</title>
+  <style>
+    /* Estilos Generales */
+    body {
+      background-color: #121212; /* Fondo oscuro */
+      color: #ffffff; /* Texto blanco */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      color: #ffffff; /* Título blanco */
+      font-size: 2.5em;
+    }
+
+    /* Grid para las tarjetas */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      margin: 20px;
+    }
+
+    /* Estilo de cada tarjeta */
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    /* Efecto al pasar el mouse */
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Imagen de la serie */
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Contenido de la tarjeta */
+    .card-content {
+      padding: 20px;
+    }
+
+    /* Título de la serie */
+    .card-content h2 {
+      font-size: 1.6em;
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    /* Detalles de la serie */
+    .info {
+      color: #888888;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    /* Enlace al tráiler */
+    .trailer-link {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #03dac5;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .trailer-link:hover {
+      background-color: #018786;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📺 Próximos Estrenos de Series</h1>
+
+  <!-- Contenedor Grid de tarjetas -->
+  <div class="grid">
+
+    <!-- Tarjeta 1 -->
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w780/6LWy0jvMpmjoS9fo3djM20h3QED.jpg" alt="Stranger Things 5">
+      <div class="card-content">
+        <h2>Stranger Things - Temporada 5</h2>
+        <p class="info">📅 Estreno: 1 de noviembre de 2025</p>
+        <p class="info">📺 Plataforma: Netflix</p>
+        <a href="https://www.youtube.com/watch?v=bOAN3PHzV2Q" target="_blank" class="trailer-link">Ver Tráiler</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w780/kY0W4iZC3yXZjGzpyCCKoJaCgTn.jpg" alt="The Last of Us 2">
+      <div class="card-content">
+        <h2>The Last of Us - Temporada 2</h2>
+        <p class="info">📅 Estreno: 10 de enero de 2026</p>
+        <p class="info">📺 Plataforma: HBO Max</p>
+        <a href="https://www.youtube.com/watch?v=uLtkt8BonwM" target="_blank" class="trailer-link">Ver Tráiler</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w780/1SYpsk5qFfnvYudGfSKumZ9gONz.jpg" alt="House of the Dragon 2">
+      <div class="card-content">
+        <h2>House of the Dragon - Temporada 2</h2>
+        <p class="info">📅 Estreno: 16 de agosto de 2025</p>
+        <p class="info">📺 Plataforma: Max</p>
+        <a href="https://www.youtube.com/watch?v=YNkOl5kMBW0" target="_blank" class="trailer-link">Ver Tráiler</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
